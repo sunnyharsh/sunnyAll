@@ -1,0 +1,113 @@
+class CarousalBtn
+{
+constructor(btnName,btnUrl){
+this.btnName=btnName;
+this.btnUrl=btnUrl;
+}
+}
+undefined
+var btn1=new CarousalBtn("SHOP VALVET ROPE","XYZ");
+undefined
+var btn2=new CarousalBtn("SHOP EVOCAT","XYZ");
+undefined
+var btn3=new CarousalBtn("SHOP TSUGI KORI","xyz")
+undefined
+var btn4=new CarousalBtn("SPORTSSTYLE","xyz");
+undefined
+var btn5=new CarousalBtn("kNOWMORE","XYZ");
+undefined
+var btn6=new CarousalBtn("SHOPMENS","XYZ");
+undefined
+var btn7=new CarousalBtn("SHOPWOMENS","XYZ");
+undefined
+var btn8=new CarousalBtn("SHOP TSUGI","XYZ");
+undefined
+var btn9=new CarousalBtn("SHOP BASKET","XYZ");
+undefined
+var btn10=new CarousalBtn("SHOP SPORTSTYLE","XYZ");
+undefined
+var carousalBtn=[];
+undefined
+carousalBtn.push(btn1);
+1
+carousalBtn.push(btn2);
+2
+carousalBtn.push(btn3);
+3
+carousalBtn.push(btn4);
+4
+carousalBtn.push(btn5);
+5
+carousalBtn.push(btn6);
+6
+carousalBtn.push(btn7);
+7
+carousalBtn.push(btn8);
+8
+carousalBtn.push(btn9);
+9
+carousalBtn.push(btn10);
+10
+carousalBtn
+(10) [CarousalBtn, CarousalBtn, CarousalBtn, CarousalBtn, CarousalBtn, CarousalBtn, CarousalBtn, CarousalBtn, CarousalBtn, CarousalBtn]0: CarousalBtn {btnName: "SHOP VALVET ROPE", btnUrl: "XYZ"}1: CarousalBtn {btnName: "SHOP EVOCAT", btnUrl: "XYZ"}2: CarousalBtn {btnName: "SHOP TSUGI KORI", btnUrl: "xyz"}3: CarousalBtn {btnName: "SPORTSSTYLE", btnUrl: "xyz"}4: CarousalBtn {btnName: "kNOWMORE", btnUrl: "XYZ"}5: CarousalBtn {btnName: "SHOPMENS", btnUrl: "XYZ"}6: CarousalBtn {btnName: "SHOPWOMENS", btnUrl: "XYZ"}7: CarousalBtn {btnName: "SHOP TSUGI", btnUrl: "XYZ"}8: CarousalBtn {btnName: "SHOP BASKET", btnUrl: "XYZ"}9: CarousalBtn {btnName: "SHOP SPORTSTYLE", btnUrl: "XYZ"}length: 10__proto__: Array(0)
+class carousalImage
+{
+	constructor(imgName,imgUrl,buttonList)
+    {
+		this.imgName=imgName;
+		this.imgUrl=imgUrl;
+		this.carousalBtn=buttonList;
+	}
+}
+undefined
+var img1=new carousalImage("firstImg","https://d21kp9itql721v.cloudfront.net/cdn/258786/media/wysiwyg/disha_vr_1.jpg",carousalBtn);
+undefined
+img1
+carousalImage {imgName: "firstImg", imgUrl: "https://d21kp9itql721v.cloudfront.net/cdn/258786/media/wysiwyg/disha_vr_1.jpg", carousalBtn: Array(10)}carousalBtn: Array(10)0: CarousalBtn {btnName: "SHOP VALVET ROPE", btnUrl: "XYZ"}1: CarousalBtn {btnName: "SHOP EVOCAT", btnUrl: "XYZ"}2: CarousalBtn {btnName: "SHOP TSUGI KORI", btnUrl: "xyz"}3: CarousalBtn {btnName: "SPORTSSTYLE", btnUrl: "xyz"}4: CarousalBtn {btnName: "kNOWMORE", btnUrl: "XYZ"}5: CarousalBtn {btnName: "SHOPMENS", btnUrl: "XYZ"}6: CarousalBtn {btnName: "SHOPWOMENS", btnUrl: "XYZ"}7: CarousalBtn {btnName: "SHOP TSUGI", btnUrl: "XYZ"}8: CarousalBtn {btnName: "SHOP BASKET", btnUrl: "XYZ"}9: CarousalBtn {btnName: "SHOP SPORTSTYLE", btnUrl: "XYZ"}length: 10__proto__: Array(0)imgName: "firstImg"imgUrl: "https://d21kp9itql721v.cloudfront.net/cdn/258786/media/wysiwyg/disha_vr_1.jpg"__proto__: Object
+var img1=new carousalImage("secondImg","https://d21kp9itql721v.cloudfront.net/cdn/258786/media/wysiwyg/17AW_BTL_ECOM_MS_Ferrari_EEA_FullBleedHero-Desktop_1440x500_3-2.jpg",carousalBtn);
+undefined
+img1;
+carousalImage {imgName: "secondImg", imgUrl: "https://d21kp9itql721v.cloudfront.net/cdn/258786/m…errari_EEA_FullBleedHero-Desktop_1440x500_3-2.jpg", carousalBtn: Array(10)}
+var img1=new carousalImage("firstImg","https://d21kp9itql721v.cloudfront.net/cdn/258786/media/wysiwyg/disha_vr_1.jpg",carousalBtn);
+undefined
+var img2=new carousalImage("secondImg","https://d21kp9itql721v.cloudfront.net/cdn/258786/media/wysiwyg/17AW_BTL_ECOM_MS_Ferrari_EEA_FullBleedHero-Desktop_1440x500_3-2.jpg",carousalBtn);
+undefined
+img1
+carousalImage {imgName: "firstImg", imgUrl: "https://d21kp9itql721v.cloudfront.net/cdn/258786/media/wysiwyg/disha_vr_1.jpg", carousalBtn: Array(10)}carousalBtn: Array(10)0: CarousalBtn {btnName: "SHOP VALVET ROPE", btnUrl: "XYZ"}1: CarousalBtn {btnName: "SHOP EVOCAT", btnUrl: "XYZ"}2: CarousalBtn {btnName: "SHOP TSUGI KORI", btnUrl: "xyz"}3: CarousalBtn {btnName: "SPORTSSTYLE", btnUrl: "xyz"}4: CarousalBtn {btnName: "kNOWMORE", btnUrl: "XYZ"}5: CarousalBtn {btnName: "SHOPMENS", btnUrl: "XYZ"}6: CarousalBtn {btnName: "SHOPWOMENS", btnUrl: "XYZ"}7: CarousalBtn {btnName: "SHOP TSUGI", btnUrl: "XYZ"}8: CarousalBtn {btnName: "SHOP BASKET", btnUrl: "XYZ"}9: CarousalBtn {btnName: "SHOP SPORTSTYLE", btnUrl: "XYZ"}length: 10__proto__: Array(0)imgName: "firstImg"imgUrl: "https://d21kp9itql721v.cloudfront.net/cdn/258786/media/wysiwyg/disha_vr_1.jpg"__proto__: Object
+img2
+carousalImage {imgName: "secondImg", imgUrl: "https://d21kp9itql721v.cloudfront.net/cdn/258786/m…errari_EEA_FullBleedHero-Desktop_1440x500_3-2.jpg", carousalBtn: Array(10)}carousalBtn: Array(10)0: CarousalBtn {btnName: "SHOP VALVET ROPE", btnUrl: "XYZ"}1: CarousalBtn {btnName: "SHOP EVOCAT", btnUrl: "XYZ"}2: CarousalBtn {btnName: "SHOP TSUGI KORI", btnUrl: "xyz"}3: CarousalBtn {btnName: "SPORTSSTYLE", btnUrl: "xyz"}4: CarousalBtn {btnName: "kNOWMORE", btnUrl: "XYZ"}5: CarousalBtn {btnName: "SHOPMENS", btnUrl: "XYZ"}6: CarousalBtn {btnName: "SHOPWOMENS", btnUrl: "XYZ"}7: CarousalBtn {btnName: "SHOP TSUGI", btnUrl: "XYZ"}8: CarousalBtn {btnName: "SHOP BASKET", btnUrl: "XYZ"}9: CarousalBtn {btnName: "SHOP SPORTSTYLE", btnUrl: "XYZ"}length: 10__proto__: Array(0)imgName: "secondImg"imgUrl: "https://d21kp9itql721v.cloudfront.net/cdn/258786/media/wysiwyg/17AW_BTL_ECOM_MS_Ferrari_EEA_FullBleedHero-Desktop_1440x500_3-2.jpg"__proto__: Object
+var img3=new carousalImage("thirdImg","https://d21kp9itql721v.cloudfront.net/cdn/258786/media/wysiwyg/17AW_BTL_ECOM_SP_Tsugi-Kori_Category-Hero_1440x500_1.jpg",carousalBtn);
+undefined
+img3
+carousalImage {imgName: "thirdImg", imgUrl: "https://d21kp9itql721v.cloudfront.net/cdn/258786/m…L_ECOM_SP_Tsugi-Kori_Category-Hero_1440x500_1.jpg", carousalBtn: Array(10)}carousalBtn: Array(10)0: CarousalBtn {btnName: "SHOP VALVET ROPE", btnUrl: "XYZ"}1: CarousalBtn {btnName: "SHOP EVOCAT", btnUrl: "XYZ"}2: CarousalBtn {btnName: "SHOP TSUGI KORI", btnUrl: "xyz"}3: CarousalBtn {btnName: "SPORTSSTYLE", btnUrl: "xyz"}4: CarousalBtn {btnName: "kNOWMORE", btnUrl: "XYZ"}5: CarousalBtn {btnName: "SHOPMENS", btnUrl: "XYZ"}6: CarousalBtn {btnName: "SHOPWOMENS", btnUrl: "XYZ"}7: CarousalBtn {btnName: "SHOP TSUGI", btnUrl: "XYZ"}8: CarousalBtn {btnName: "SHOP BASKET", btnUrl: "XYZ"}9: CarousalBtn {btnName: "SHOP SPORTSTYLE", btnUrl: "XYZ"}length: 10__proto__: Array(0)imgName: "thirdImg"imgUrl: "https://d21kp9itql721v.cloudfront.net/cdn/258786/media/wysiwyg/17AW_BTL_ECOM_SP_Tsugi-Kori_Category-Hero_1440x500_1.jpg"__proto__: Object
+var img4=new carousalImage("fourthImg","https://d21kp9itql721v.cloudfront.net/cdn/258786/media/wysiwyg/homepage/17SS_BTL_ECOM_RT_Ignite-Netfit_Hero_1440x720_1_02.jpg",carousalBtn);
+undefined
+img4
+carousalImage {imgName: "fourthImg", imgUrl: "https://d21kp9itql721v.cloudfront.net/cdn/258786/m…_BTL_ECOM_RT_Ignite-Netfit_Hero_1440x720_1_02.jpg", carousalBtn: Array(10)}carousalBtn: (10) [CarousalBtn, CarousalBtn, CarousalBtn, CarousalBtn, CarousalBtn, CarousalBtn, CarousalBtn, CarousalBtn, CarousalBtn, CarousalBtn]imgName: "fourthImg"imgUrl: "https://d21kp9itql721v.cloudfront.net/cdn/258786/media/wysiwyg/homepage/17SS_BTL_ECOM_RT_Ignite-Netfit_Hero_1440x720_1_02.jpg"__proto__: Object
+var img5=new carousalImage("fifthImg","https://d21kp9itql721v.cloudfront.net/cdn/258786/media/wysiwyg/homepage/tsugi_netfit02.jpg",carousalBtn);
+undefined
+img5;
+carousalImage {imgName: "fifthImg", imgUrl: "https://d21kp9itql721v.cloudfront.net/cdn/258786/media/wysiwyg/homepage/tsugi_netfit02.jpg", carousalBtn: Array(10)}carousalBtn: Array(10)0: CarousalBtn {btnName: "SHOP VALVET ROPE", btnUrl: "XYZ"}1: CarousalBtn {btnName: "SHOP EVOCAT", btnUrl: "XYZ"}2: CarousalBtn {btnName: "SHOP TSUGI KORI", btnUrl: "xyz"}3: CarousalBtn {btnName: "SPORTSSTYLE", btnUrl: "xyz"}4: CarousalBtn {btnName: "kNOWMORE", btnUrl: "XYZ"}5: CarousalBtn {btnName: "SHOPMENS", btnUrl: "XYZ"}6: CarousalBtn {btnName: "SHOPWOMENS", btnUrl: "XYZ"}7: CarousalBtn {btnName: "SHOP TSUGI", btnUrl: "XYZ"}8: CarousalBtn {btnName: "SHOP BASKET", btnUrl: "XYZ"}9: CarousalBtn {btnName: "SHOP SPORTSTYLE", btnUrl: "XYZ"}length: 10__proto__: Array(0)imgName: "fifthImg"imgUrl: "https://d21kp9itql721v.cloudfront.net/cdn/258786/media/wysiwyg/homepage/tsugi_netfit02.jpg"__proto__: Object
+var img6=new carousalImage("sixthImg","https://d21kp9itql721v.cloudfront.net/cdn/258786/media/wysiwyg/basket_heart_aw17.jpg",carousalBtn);
+undefined
+var carousalImgList=[];
+undefined
+carousalImgList.push(img1);
+1
+carousalImgList.push(img2);
+2
+carousalImgList.push(img3);
+3
+carousalImgList.push(img4);
+4
+carousalImgList.push(img5);
+5
+carousalImgList.push(img6);
+6
+carousalImgList;
+(6) [carousalImage, carousalImage, carousalImage, carousalImage, carousalImage, carousalImage]0: carousalImage {imgName: "firstImg", imgUrl: "https://d21kp9itql721v.cloudfront.net/cdn/258786/media/wysiwyg/disha_vr_1.jpg", carousalBtn: Array(10)}carousalBtn: Array(10)0: CarousalBtn {btnName: "SHOP VALVET ROPE", btnUrl: "XYZ"}1: CarousalBtn {btnName: "SHOP EVOCAT", btnUrl: "XYZ"}2: CarousalBtn {btnName: "SHOP TSUGI KORI", btnUrl: "xyz"}3: CarousalBtn {btnName: "SPORTSSTYLE", btnUrl: "xyz"}4: CarousalBtn {btnName: "kNOWMORE", btnUrl: "XYZ"}5: CarousalBtn {btnName: "SHOPMENS", btnUrl: "XYZ"}6: CarousalBtn {btnName: "SHOPWOMENS", btnUrl: "XYZ"}7: CarousalBtn {btnName: "SHOP TSUGI", btnUrl: "XYZ"}8: CarousalBtn {btnName: "SHOP BASKET", btnUrl: "XYZ"}9: CarousalBtn {btnName: "SHOP SPORTSTYLE", btnUrl: "XYZ"}length: 10__proto__: Array(0)imgName: "firstImg"imgUrl: "https://d21kp9itql721v.cloudfront.net/cdn/258786/media/wysiwyg/disha_vr_1.jpg"__proto__: Object1: carousalImage {imgName: "secondImg", imgUrl: "https://d21kp9itql721v.cloudfront.net/cdn/258786/m…errari_EEA_FullBleedHero-Desktop_1440x500_3-2.jpg", carousalBtn: Array(10)}2: carousalImage {imgName: "thirdImg", imgUrl: "https://d21kp9itql721v.cloudfront.net/cdn/258786/m…L_ECOM_SP_Tsugi-Kori_Category-Hero_1440x500_1.jpg", carousalBtn: Array(10)}3: carousalImage {imgName: "fourthImg", imgUrl: "https://d21kp9itql721v.cloudfront.net/cdn/258786/m…_BTL_ECOM_RT_Ignite-Netfit_Hero_1440x720_1_02.jpg", carousalBtn: Array(10)}4: carousalImage {imgName: "fifthImg", imgUrl: "https://d21kp9itql721v.cloudfront.net/cdn/258786/media/wysiwyg/homepage/tsugi_netfit02.jpg", carousalBtn: Array(10)}5: carousalImage {imgName: "sixthImg", imgUrl: "https://d21kp9itql721v.cloudfront.net/cdn/258786/media/wysiwyg/basket_heart_aw17.jpg", carousalBtn: Array(10)}length: 6__proto__: Array(0)
+var carousalObj={"carousalImageObject":carousalImgList};
+undefined
+carousalObj
+{carousalImageObject: Array(6)}carousalImageObject: Array(6)0: carousalImage {imgName: "firstImg", imgUrl: "https://d21kp9itql721v.cloudfront.net/cdn/258786/media/wysiwyg/disha_vr_1.jpg", carousalBtn: Array(10)}1: carousalImage {imgName: "secondImg", imgUrl: "https://d21kp9itql721v.cloudfront.net/cdn/258786/m…errari_EEA_FullBleedHero-Desktop_1440x500_3-2.jpg", carousalBtn: Array(10)}2: carousalImage {imgName: "thirdImg", imgUrl: "https://d21kp9itql721v.cloudfront.net/cdn/258786/m…L_ECOM_SP_Tsugi-Kori_Category-Hero_1440x500_1.jpg", carousalBtn: Array(10)}3: carousalImage {imgName: "fourthImg", imgUrl: "https://d21kp9itql721v.cloudfront.net/cdn/258786/m…_BTL_ECOM_RT_Ignite-Netfit_Hero_1440x720_1_02.jpg", carousalBtn: Array(10)}4: carousalImage {imgName: "fifthImg", imgUrl: "https://d21kp9itql721v.cloudfront.net/cdn/258786/media/wysiwyg/homepage/tsugi_netfit02.jpg", carousalBtn: Array(10)}5: carousalImage {imgName: "sixthImg", imgUrl: "https://d21kp9itql721v.cloudfront.net/cdn/258786/media/wysiwyg/basket_heart_aw17.jpg", carousalBtn: Array(10)}length: 6__proto__: Array(0)__proto__: Object
+var json=JSON.stringify(carousalObj);
