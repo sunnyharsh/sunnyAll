@@ -1,0 +1,17 @@
+{
+  "name": "lib",
+  "authors": [
+    "sunnyharsh <sunnyharshsunny12345@gmail.com>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "license": "",
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
