@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .error{
+        color: red;
+        font-style: italic;
+    }
+    </style>
+    <script src="libs/angular.min.js"></script>
+    <script>
+    const app=angular.module("myapp" ,[]);
+    app.controller("myctrl",($scope)=>{
+    $scope.validate=(formName)=>{
+        if(formName.$valid){
+            $scope.result="form is valid";
+        }
+        else{
+            $scope.result="invalid form";
+        }
+    }
+    });
+    </script>
+</head>
+<body ng-app="myapp" ng-controller="myctrl">
+    <h1>Result is {{result}}</h1>
+    <form novalidate name="form1" ng-submit="validate(form1)">
+        <!--reach on field through name and data through ng-model-->
+        <input type="text"  name="userid" ng-model="userid" placeholder="type name here" required>
+        <!--//if($pristine:true)
+        pristine means nothing written in field
+        if($dirty:false)
+        if change occurs called dirty than dirty value will be true dirty after fill alwayes dirty
+        $error{"required":"true"}
+        whose validation fail say $error-->
+        <span class="error" ng-show="form1.userid.$touched && form1.userid.$pristine && form1.userid.$error.required">
+            userid can't be empty
+        </span>
+       <!--{{form1.userid}}-->
+        <input type="email" name="email" ng-model="email" placeholder="Tup email here" required>
+        <input type="text" name="creditcard" ng-model="creditcard" pattern="[0-9]{10,16}" placeholder="type credit card here" required>
+            <span class="error" ng-show="form1.creditcard.$touched && form1.creditcard.$pristine && form1.creditcard.$error.required">please enter credit card number</span>
+            <span class="error" ng-show="form1.creditcard.$touched && form1.creditcard.$dirty && form1.creditcard.$error.pattern">credit card number not valid</span>
+        <button type="submit">submit</button>
+    </form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
