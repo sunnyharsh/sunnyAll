@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ReadyMadeFilter</title>
+    <script src="lib/bower_components/angular/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/model.js"></script>
+    <script src="js/controller.js"></script>
+    <style>
+    img{
+        width: 200px;
+        height: 200px;
+    }
+    li{
+        list-style-type: none;
+    }
+    </style>
+</head>
+<body ng-app="myapp" ng-controller="myctrl">
+
+    sort by <select ng-model="sort">
+        <option>choose sort</option>
+        <option>id</option>
+        <option>name</option>
+        <option>price</option>
+    </select>
+    Asc Desc <input type="checkbox" ng-init="order=false" ng-model="order">
+    Check Box is {{order}}
+
+    <h1>data comes from server</h1>
+    <label for="">search</label>
+	<input type="text" ng-model="search">
+  <ul>
+        <li ng-repeat="info in tempdata.mobiles|filter:search|orderBy:sort:order">
+            {{info.id}} <br>  {{info.name}} <br> {{info.price|currency:'USD$;'}} <br>
+            <img ng-src="{{info.url}}">
+        </li>
+  </ul>
+</body>
+</html>

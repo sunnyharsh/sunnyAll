@@ -1,0 +1,20 @@
+{
+  "name": "libs",
+  "authors": [
+    "sunnyharsh <sunnyharshsunny12345@gmail.com>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.6"
+  }
+}
