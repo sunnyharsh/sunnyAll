@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="libs/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/model.js"></script>
+    <script src="js/controller.js"></script>
+    <style>
+        img {
+            height: 200px;
+            width: 200px;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+    </style>
+</head>
+
+<body ng-app="myapp" ng-controller="myctrl">
+    Sort By<select ng-model="sort">
+<option >Choose Sort</option>
+<option >id</option>
+<option >name</option>
+<option >price</option>
+</select>
+    <button ng-click="callMe()">click here</button>
+    <!-- {{tempdata}}-->
+    <ul>
+        <li ng-repeat="info in tempdata.mobiles">
+
+            <img ng-src="{{info.url}}"> <br>
+            <strong>id is:- {{info.id}}</strong> <br>
+            <strong>name is:- {{info.name|lowercase}}</strong> <br>
+            <strong>price is :- {{info.price}}</strong>
+        </li>
+    </ul>
+</body>
+
+</html>
