@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="libs/angular.min.js"></script>
+    <script src="libs/ngStorage.min.js"></script>
+    <!--//ngStorage depend on angular-->
+    <script>
+        var app = angular.module('app', ['ngStorage']);
+        app.factory("myfactory", function() {
+            return {
+                data: ["ram", "sunny"]
+            };
+        })
+        app.controller('Ctrl', function($scope, $localStorage, $sessionStorage, myfactory) {
+            $scope.abcd = $localStorage; //Pass $localStorage (or $sessionStorage) by reference to a hook under $scope
+            // Delete from Local Storage
+            //delete $scope.abcd.counter;
+            // delete $localStorage.counter;
+            //$localStorage.$reset(); // clear the localstorage
+            /* $localStorage.$reset({ counter: 21 // reset with default value });*/
+            // $scope.abcd.mydata=myfactory.data;
+        });
+    </script>
+</head>
+
+<body ng-app="app" ng-controller="Ctrl">
+    <button ng-click="abcd.counter=abcd.counter+1">{{abcd.counter}}</button>
+</body>
+</html>
