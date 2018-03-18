@@ -1,0 +1,17 @@
+{
+  "name": "spa",
+  "authors": [
+    "sunnyharsh <sunnyharshsunny12345@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

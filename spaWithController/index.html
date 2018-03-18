@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./bower_components/angular/angular.min.js"></script>
+    <script src="./bower_components/angular-route/angular-route.min.js"></script>
+    <script src="./custom/app.js"></script>
+    <script src="./custom/about.js"></script>
+    <script src="./custom/route.js"></script>
+    <script src="./custom/home.js"></script>
+    <title>Document</title>
+</head>
+<body ng-app="myapp" >
+    <div id="header">
+        <ul>
+            <li><a ng-href="#/home/sunny/kumar">home</a></li>
+            <li><a ng-href="#/about">about</a></li>
+        </ul>
+    </div>
+    <section>
+        <fieldset>
+            <legend>content</legend>
+                <ng-view></ng-view>
+          
+        </fieldset>
+    </section>
+</body>
+</html>
