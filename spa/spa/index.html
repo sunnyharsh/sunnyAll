@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    #header ul{
+        list-style: none
+    }
+    li{
+        display: inline-block;
+        padding-right: 15px;
+    }
+    a{
+        cursor: pointer;
+    }
+    </style>
+    <script src="./libs/angular.min.js"></script>
+    <script src="./libs/angular-route.min.js"></script>
+    <script src="./customjs/app.js"></script>
+    <script src="./customjs/route.js"></script>
+</head>
+<body ng-app="myapp">
+    <div id="header">
+        <ul>
+            <li><a ng-href="#/home">home</a></li>
+            <li><a ng-href="#/about">about</a></li>
+            <li><a ng-href="#/contact">contact</a></li> 
+            <li><a ng-href="#/gallery">gallery</a></li>
+        </ul>
+    </div>
+
+    <section>
+        <fieldset>
+            <legend>Content</legend>
+            <ng-view></ng-view>
+        </fieldset>
+</section>
+</body>
+</html>
